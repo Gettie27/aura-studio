@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Studio | Beauty & Self-Care</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="logo">aura<span>.</span></a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">Our Story</a>
+    </nav>
+
+    <div class="nav-actions">
+  <button id="theme-toggle" class="theme-toggle"
+          type="button" aria-label="Switch to dark mode">
+    ☾ Dark
+  </button>
+  <a href="#booking" class="nav-button">Book a Visit ↗</a>
+</div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR MOMENT. YOUR GLOW.</p>
+        <h1>Beauty begins<br>with <em>you.</em></h1>
+        <p class="intro">
+          A little luxury, a little self-love, and a space
+          where you can feel like your most beautiful self.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#booking" class="primary-button">Book your experience ↗</a>
+          <a href="#services" class="text-button">Explore services ↓</a>
+        </div>
+
+        <div class="hero-note">
+          <span class="sparkle">✳</span>
+          <span>Made for your kind of beautiful.</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-circle"></div>
+        <div class="art-label">THE ART OF<br>SELF-CARE</div>
+        <div class="flower">✿</div>
+        <div class="art-bottom">
+          <span>01 / 03</span>
+          <span>Feel good. Look good.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+          <h2>Your beauty <em>rituals.</em></h2>
+        </div>
+        <p>Thoughtfully chosen services to help you<br>look good and feel even better.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon">✧</div>
+          <p class="service-number">01 / NAILS</p>
+          <h3>Nail artistry</h3>
+          <p>From clean classics to designs that turn heads.</p>
+          <p class="service-price">From KSh 800</p>
+          <a href="#booking" class="service-link" data-service="Nail Artistry">
+            Discover service ↗
+          </a>
+        </article>
+
+        <article class="service-card featured">
+          <div class="service-icon">♡</div>
+          <p class="service-number">02 / CARE</p>
+          <h3>Self-care rituals</h3>
+          <p>Slow down, take a breath, and make time for you.</p>
+          <p class="service-price">From KSh 1,500</p>
+          <a href="#booking" class="service-link" data-service="Self-Care Rituals">
+            Discover service ↗
+          </a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">✿</div>
+          <p class="service-number">03 / BEAUTY</p>
+          <h3>Your glow</h3>
+          <p>Little details that make you feel extraordinary.</p>
+          <p class="service-price">From KSh 1,000</p>
+          <a href="#booking" class="service-link" data-service="Your Glow">
+            Discover service ↗
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <p class="eyebrow">MORE THAN A BEAUTY STUDIO</p>
+      <h2>You deserve to feel as good as you <em>look.</em></h2>
+      <p>Consider this your reminder to pause, recharge, and choose yourself.</p>
+    </section>
+
+    <section class="booking section" id="booking">
+      <div>
+        <p class="eyebrow">YOUR NEXT FAVOURITE MOMENT</p>
+        <h2>Let's make time<br>for <em>you.</em></h2>
+        <p>Tell us what you have in mind.</p>
+      </div>
+
+      <form id="booking-form">
+        <label for="client-name">Your name</label>
+        <input id="client-name" name="name" type="text"
+          placeholder="Enter your name" required>
+
+        <label for="client-email">Email address</label>
+        <input id="client-email" name="email" type="email"
+          placeholder="you@example.com" required>
+
+        <label for="service">Choose your service</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option>Nail Artistry</option>
+          <option>Self-Care Rituals</option>
+          <option>Your Glow</option>
+        </select>
+
+        <label for="visit-date">Preferred date</label>
+        <input id="visit-date" name="date" type="date" required>
+
+        <label for="visit-time">Preferred time</label>
+        <input id="visit-time" name="time" type="time" required>
+
+
+        <button type="submit" class="primary-button submit-button">
+          Request a booking ↗
+        </button>
+
+        <p id="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="logo">aura<span>.</span></a>
+    <p>A little luxury. A lot of self-love.</p>
+    <p>© <span id="year"></span> Aura Studio</p>
+  </footer>
+</body>
+</html>
